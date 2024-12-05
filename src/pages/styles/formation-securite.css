@@ -81,7 +81,7 @@ body {
   align-items: center;
 }
 .svg2 {
-  height: 8vw;
+  height: 7vw;
 }
 .svg {
   height: 10vw;
@@ -116,6 +116,9 @@ body {
   }
   .auto {
     font-size: 3vw;
+  }
+  .bloc-formation {
+    padding: 20px;
   }
 }
 
