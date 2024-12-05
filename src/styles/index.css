@@ -1,0 +1,322 @@
+body {
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+.nom {
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  margin: 2vh 2vw;
+}
+.container-titre {
+  height: 50vh;
+  display: flex;
+  background-image: url(../img/accueil/accueil.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-titre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.img-titre {
+  height: 100%;
+  width: auto;
+}
+.titre {
+  z-index: 2;
+  font-size: 5vw;
+  background-color: #00000099;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+.auto {
+  font-size: 2vw;
+  z-index: 2;
+}
+.titre-formation {
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  margin: 8vh 0 2vh 0;
+}
+.container-formation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, auto);
+  gap: 20px;
+  padding: 4vw;
+}
+.bloc-formation {
+  aspect-ratio: 9/ 10;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.15s;
+}
+.bloc-formation:hover {
+  transform: scale(1.03);
+}
+.securite,
+.vehicule-auto,
+.pieces,
+.courroie,
+.cycle-4-temps,
+.caracteristique-moteur,
+.lubrifiants,
+.refroidissement,
+.pneu,
+.suspension,
+.suspension-pilotee,
+.train-roulant,
+.freinage,
+.direction,
+.transmission,
+.electricite,
+.alternateur,
+.signalisation,
+.carburants,
+.injection,
+.capteurs,
+.clim,
+.allumage,
+.suralimentation,
+.depollution,
+.airbags,
+.mux,
+.tri,
+.aides,
+.tp-atelier {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.securite {
+  background-image: url(../img/accueil/securite.webp);
+  height: 80%;
+  width: 100%;
+}
+.vehicule-auto {
+  background-image: url(../img/accueil/vehicule-auto.webp);
+  height: 50%;
+  width: 100%;
+}
+.pieces {
+  background-image: url(../img/accueil/pieces.webp);
+  height: 50%;
+  width: 100%;
+}
+.courroie {
+  background-image: url(../img/accueil/Courroie_distribution.webp);
+  height: 60%;
+  width: 100%;
+}
+.cycle-4-temps {
+  background-image: url(../img/accueil/cycle-4-temps.webp);
+  height: 52%;
+  width: 100%;
+}
+.caracteristique-moteur {
+  background-image: url(../img/accueil/caracteristique-moteur.gif);
+  height: 70%;
+  width: 100%;
+}
+.lubrifiants {
+  background-image: url(../img/accueil/lubrifiants.webp);
+  height: 56%;
+  width: 100%;
+}
+.refroidissement {
+  background-image: url(../img/accueil/refroidissement.webp);
+  height: 66%;
+  width: 100%;
+}
+.pneu {
+  background-image: url(../img/accueil/pneu.webp);
+  height: 56%;
+  width: 100%;
+}
+.suspension {
+  background-image: url(../img/accueil/suspension.webp);
+  height: 55%;
+  width: 100%;
+}
+.suspension-pilotee {
+  background-image: url(../img/accueil/suspension-pilotée.webp);
+  height: 42%;
+  width: 100%;
+}
+.train-roulant {
+  background-image: url(../img/accueil/Train-roulant.webp);
+  height: 39%;
+  width: 100%;
+}
+.freinage {
+  background-image: url(../img/accueil/freinage.webp);
+  height: 75%;
+  width: 100%;
+}
+.direction {
+  background-image: url(../img/accueil/direction.webp);
+  height: 62%;
+  width: 100%;
+}
+.transmission {
+  background-image: url(../img/accueil/transmission.webp);
+  height: 52%;
+  width: 100%;
+}
+.electricite {
+  background-image: url(../img/accueil/elec.webp);
+  height: 75%;
+  width: 100%;
+}
+.alternateur {
+  background-image: url(../img/accueil/alternateur.webp);
+  height: 51%;
+  width: 100%;
+}
+.signalisation {
+  background-image: url(../img/accueil/signalisation.webp);
+  height: 50%;
+  width: 100%;
+}
+.carburants {
+  background-image: url(../img/accueil/carburants.webp);
+  height: 41%;
+  width: 100%;
+}
+.capteurs {
+  background-image: url(../img/accueil/Systeme-general.webp);
+  height: 48%;
+  width: 100%;
+}
+.injection {
+  background-image: url(../img/accueil/injection.webp);
+  height: 67%;
+  width: 100%;
+}
+.clim {
+  background-image: url(../img/accueil/clim.webp);
+  height: 56%;
+  width: 100%;
+}
+.allumage {
+  background-image: url(../img/accueil/allumage.webp);
+  height: 60%;
+  width: 100%;
+}
+.suralimentation {
+  background-image: url(../img/accueil/suralimentation.gif);
+  height: 87%;
+  width: 100%;
+}
+.depollution {
+  background-image: url(../img/accueil/depollution.webp);
+  height: 51%;
+  width: 100%;
+}
+.airbags {
+  background-image: url(../img/accueil/airbags.webp);
+  height: 41%;
+  width: 100%;
+}
+.mux {
+  background-image: url(../img/accueil/mux.webp);
+  height: 57%;
+  width: 100%;
+}
+.tri {
+  background-image: url(../img/accueil/tri.webp);
+  height: 52%;
+  width: 100%;
+}
+.aides {
+  background-image: url(../img/accueil/aide.webp);
+  height: 50%;
+  width: 100%;
+}
+.tp-atelier {
+  background-image: url(../img/accueil/tp-atelier.webp);
+  height: 44%;
+  width: 100%;
+}
+
+.texte {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.img-grid {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  aspect-ratio: 5 / 4;
+}
+@media (max-width: 850px) {
+  .container-formation {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(15, auto);
+  }
+  .texte {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 700px) {
+  .titre {
+    font-size: 6vw;
+  }
+  .auto {
+    font-size: 3vw;
+  }
+  .titre-formation {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .titre {
+    font-size: 7vw;
+  }
+  .auto {
+    font-size: 4vw;
+  }
+  .titre-formation {
+    font-size: 5vw;
+  }
+
+  .container-formation {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, auto);
+    padding: 7vw;
+  }
+  .texte {
+    font-size: 4vw;
+  }
+}
