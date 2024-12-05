@@ -119,6 +119,7 @@ body {
   }
   .bloc-formation {
     padding: 20px;
+    aspect-ratio: 8/ 10;
   }
 }
 
