@@ -1,0 +1,133 @@
+body {
+  background-color: var(--couleur-body);
+  color: var(--couleur-texte);
+  margin: 0;
+  font-family: "Inter-SemiBold", sans-serif;
+}
+.nom {
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  margin: 2vh 2vw;
+}
+.container-titre {
+  height: 40vh;
+  display: flex;
+  background-image: url(../../img/environnement/fond.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.container-titre::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.titre {
+  z-index: 2;
+  font-size: 5vw;
+  background-color: #00000099;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+.auto {
+  font-size: 2vw;
+  z-index: 2;
+}
+.container-formation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 5vw 10vw;
+}
+.bloc-formation {
+  aspect-ratio: 9/ 10;
+  background-color: var(--couleur-container);
+  border-radius: 20px;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: transform 0.15s;
+}
+.bloc-formation:hover {
+  transform: scale(1.03);
+}
+.texte {
+  color: black;
+  font-size: 1.5vw;
+  font-weight: 600;
+  text-align: center;
+}
+.img {
+  display: flex;
+  width: 100%;
+  height: 55%;
+  margin-top: 1vw;
+  justify-content: center;
+  align-items: center;
+}
+.svg2 {
+  height: 8vw;
+}
+.svg {
+  height: 10vw;
+}
+
+@media (max-width: 1000px) {
+  .container-formation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container-formation > .bloc-formation:nth-child(4) {
+    grid-column: 2;
+  }
+  .texte {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 750px) {
+  .container-formation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-formation > .bloc-formation:nth-child(4) {
+    grid-column: auto; /* Supprime le positionnement forcé */
+  }
+  .texte {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .titre {
+    font-size: 6vw;
+  }
+  .auto {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .titre {
+    font-size: 7vw;
+  }
+  .auto {
+    font-size: 4vw;
+  }
+
+  .texte {
+    font-size: 3vw;
+  }
+}

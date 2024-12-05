@@ -32,10 +32,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.img-titre {
-  height: 100%;
-  width: auto;
-}
+
 .titre {
   z-index: 2;
   font-size: 5vw;
@@ -64,7 +61,7 @@ body {
 }
 .bloc-formation {
   aspect-ratio: 9/ 10;
-  background-color: #ffffff;
+  background-color: var(--couleur-container);
   border-radius: 20px;
   padding: 30px;
   align-items: center;
@@ -273,12 +270,6 @@ body {
   text-align: center;
 }
 
-.img-grid {
-  height: auto;
-  width: 100%;
-  border-radius: 20px;
-  aspect-ratio: 5 / 4;
-}
 @media (max-width: 850px) {
   .container-formation {
     grid-template-columns: repeat(2, 1fr);

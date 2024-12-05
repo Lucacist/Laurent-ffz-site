@@ -1,11 +1,18 @@
 :root {
   --couleur-body: #455a64;
-  --couleur-container: #0d0d0d;
-  --couleur-input: #0a0a0a;
-  --couleur-border: #212121;
+  --couleur-container: #fff;
   --couleur-texte: #fff;
-  --couleur-sous-texte: #ffffff95;
 }
 body {
   user-select: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
