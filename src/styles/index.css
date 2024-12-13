@@ -52,14 +52,14 @@ body {
   justify-content: center;
   margin: 8vh 0 2vh 0;
 }
-.container-formation {
+.container-formation-in {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(10, auto);
   gap: 20px;
   padding: 4vw;
 }
-.bloc-formation {
+.bloc-formation-in {
   aspect-ratio: 9/ 10;
   background-color: var(--couleur-container);
   border-radius: 20px;

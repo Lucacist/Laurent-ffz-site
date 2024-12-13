@@ -32,32 +32,7 @@ a {
 .index {
   z-index: 2;
 }
-
-/* quiz Véhicule-automobile */
-
-/*
-.bloc-formation-quiz-auto {
-  aspect-ratio: 9/ 10;
-  background-color: var(--couleur-container);
-  border-radius: 20px;
-  padding: 30px;
-  align-items: center;
-  display: none;
-  justify-content: space-between;
-  flex-direction: column;
-  transition: transform 0.15s;
-}
-.bloc-formation-quiz-auto:hover {
-  transform: scale(1.03);
-}
-.container-formation-quiz-auto {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 5vw 10vw;
-}*/
-
-.bloc-formation-quiz-auto {
+.bloc-formation {
   aspect-ratio: 9/ 10;
   background-color: var(--couleur-container);
   border-radius: 20px;
@@ -68,13 +43,78 @@ a {
   flex-direction: column;
   transition: transform 0.15s;
 }
-.bloc-formation-quiz-auto:hover {
+.bloc-formation:hover {
   transform: scale(1.03);
 }
-.container-formation-quiz-auto {
+.container-formation {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 5vw 10vw;
 }
+
+/* quiz Véhicule-automobile */
+
+.quiz-vehicule {
+  display: flex;
+}
+.quiz-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+/*.quiz-vehicule {
+  display: none;
+}
+.quiz-grid {
+  grid-template-columns: repeat(3, 1fr);
+}*/
+
 /*--------------------------------------------*/
+
+@media (max-width: 1000px) {
+  .container-formation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container-formation > .bloc-formation:nth-child(4) {
+    grid-column: 2;
+  }
+  .texte {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 750px) {
+  .container-formation {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-formation > .bloc-formation:nth-child(4) {
+    grid-column: auto;
+  }
+  .texte {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .titre {
+    font-size: 6vw;
+  }
+  .auto {
+    font-size: 3vw;
+  }
+  .bloc-formation {
+    padding: 20px;
+    aspect-ratio: 8/ 10;
+  }
+}
+
+@media (max-width: 550px) {
+  .titre {
+    font-size: 7vw;
+  }
+  .auto {
+    font-size: 4vw;
+  }
+
+  .texte {
+    font-size: 3vw;
+  }
+}
