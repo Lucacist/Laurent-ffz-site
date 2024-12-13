@@ -13,7 +13,7 @@ body {
 .container-titre {
   height: 40vh;
   display: flex;
-  background-image: url(../../img/accueil/vehicule-auto.webp);
+  background-image: url(../../img/accueil/pieces.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,18 +31,6 @@ body {
   height: 40vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
-}
-.Risques {
-  display: flex;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin: auto;
-}
-.Risques {
-  background-image: url(../../img/environnement/accident-mecanique.png);
-  height: 35%;
-  width: 70%;
 }
 
 .titre {
@@ -102,4 +90,16 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
+}
+
+@media (max-width: 1000px) {
+  .container-formation {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container-formation > .bloc-formation:nth-child(4) {
+    grid-column: auto !important;
+  }
+  .texte {
+    font-size: 2vw;
+  }
 }
