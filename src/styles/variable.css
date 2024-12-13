@@ -52,6 +52,18 @@ a {
   gap: 20px;
   padding: 5vw 10vw;
 }
+.navbar {
+  display: flex;
+  justify-content: left;
+  width: auto;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+.texte-r {
+  color: var(--couleur-texte);
+  font-size: 20px;
+}
 
 /* quiz Véhicule-automobile */
 
