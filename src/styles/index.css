@@ -10,6 +10,9 @@ body {
   font-size: 20px;
   margin: 2vh 2vw;
 }
+.headerbar {
+  justify-content: right !important;
+}
 .container-titre {
   height: 50vh;
   display: flex;
@@ -271,7 +274,7 @@ body {
 }
 
 @media (max-width: 850px) {
-  .container-formation {
+  .container-formation-in {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(15, auto);
   }
@@ -302,7 +305,7 @@ body {
     font-size: 5vw;
   }
 
-  .container-formation {
+  .container-formation-in {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(15, auto);
     padding: 7vw;
